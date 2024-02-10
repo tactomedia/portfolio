@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Raleway", sans-serif;
+}
+h1,
+h2 {
+  font-weight: 900;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-weight: 800;
+  font-size: 26px;
+}
+h4 {
+  font-weight: 800;
+  font-size: 13px;
+}
+p {
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+section {
+  padding: 50px 10%;
+}
+
+img {
+  width: 100%;
+}
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* HEADER */
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 10%;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.nav-container ul {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.nav-container a {
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.nav-container a:hover {
+  color: #127878;
+}
+
+/* .ul-servicios {
+  column-count: 4;
+  column-gap: 20px;
+  list-style: none;
+} */
+
+/* @media only screen and (max-width: 768px) {
+  .ul-servicios {
+    column-count: 2;
+  }
+} */
+
+/* BOTONES */
+
+.btn-primario {
+  background-color: #127878;
+  height: 40px;
+  min-width: 116px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #127878;
+  color: white;
+  font-size: 17px;
+  padding: 0 15px;
+  cursor: pointer;
+}
+
+.btn-secundario {
+  color: #127878;
+  height: 40px;
+  min-width: 116px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #127878;
+  font-size: 17px;
+  padding: 0 15px;
+  cursor: pointer;
+}
+
+/* BANNER */
+
+.banner-container {
+  display: flex;
+  gap: 40px;
+}
+
+.banner-container > div {
+  width: 50%;
+}
+
+.banner-btn {
+  display: flex;
+  gap: 20px;
+}
+
+.formulario-container {
+  max-width: 70%;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* ACERCA */
+#acerca {
+  display: flex;
+  gap: 30px;
+  background-color: #f3f3f3;
+}
+
+.acerca-img {
+  width: 35%;
+}
+.acerca-txt {
+  width: 75%;
+}
+.acerca-txt div {
+  display: flex;
+  gap: 20px;
+}
+
+#servicios h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.servicios-listas {
+  display: flex;
+}
+.servicios-listas ul {
+  width: 25%;
+}
+.servicios-listas ul li img {
+  width: 30px;
+  margin-right: 10px;
+}
+.servicios-listas ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* PORTFOLIO */
+
+#portfolio {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #f3f3f3;
+}
+
+#portfolio h2 {
+  text-align: center;
+}
+
+.cards-container {
+  display: flex;
+  gap: 30px;
+}
+
+.cards-container > div {
+  background-color: white;
+  padding: 20px 10px;
+}
+
+/* CONTACTO */
+#contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#contacto h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#contacto > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.formulario-container {
+  width: 60%;
+}
+
+.contactolista-container ul li img {
+  width: 30px;
+  margin-right: 10px;
+}
+.contactolista-container ul li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.formulario input,
+textarea {
+  border-radius: 10px;
+  color: #3e3e3e;
+  font-size: 14px;
+  font-family: "Raleway";
+  padding: 10px;
+  border: 1px solid
+    rgba(126.00000008940697, 126.00000008940697, 126.00000008940697, 1);
+}
+
+.formulario button {
+  width: 117px;
+}
+
+.form-acuerdo {
+  display: flex;
+  align-items: flex;
+  gap: 10px;
+}
+.form-acuerdo input {
+  width: 15px;
+  height: 15px;
+  margin-top: 3px;
+}
+
+footer {
+  padding: 20px 10%;
+  background-color: #3f3f3f;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer > div {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.redes-footer {
+  display: flex;
+  gap: 15px;
+}
+
+footer ul {
+  display: flex;
+  gap: 30px;
+}
+
+footer a {
+  color: white;
+}
+footer a:hover {
+  color: #127878;
+}
+
+footer p {
+  margin-bottom: 0;
+}
